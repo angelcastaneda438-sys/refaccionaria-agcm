@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECSELL - Iniciar sesión</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="formulario">
+
+        <img
+            width="200"
+            src="img/logo jpg.png"
+            alt="Logo TECSELL"
+        >
+
+        <h2>Iniciar sesión</h2>
+
+        <form id="formulario">
+
+            <input
+                id="usuario"
+                type="text"
+                placeholder="Usuario"
+                autocomplete="username"
+                required
+            >
+
+            <input
+                id="contrasena"
+                type="password"
+                placeholder="Contraseña"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="submit">
+                Iniciar sesión
+            </button>
+
+        </form>
+
+        <p id="mensajeLogin"></p>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
