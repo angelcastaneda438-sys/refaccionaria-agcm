@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>REFACCIONARIA AGCM | Tienda</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="pagina-inventario pagina-cliente" data-rol="cliente">
+
+    <header class="encabezado encabezado-cliente">
+        <img src="../img/logo jpg.png" width="130"
+             alt="Logo REFACCIONARIA AGCM">
+
+        <p class="marca-superior">CALIDAD · CONFIANZA · RENDIMIENTO</p>
+        <h1>REFACCIONARIA AGCM</h1>
+        <p>Todo para mantener tu vehículo en movimiento.</p>
+
+        <span class="etiqueta-rol">CATÁLOGO DE PRODUCTOS</span>
+    </header>
+
+    <main class="contenido contenido-almacenista">
+
+        <section class="bienvenida-cliente">
+            <div>
+                <p class="texto-rojo">BIENVENIDO A NUESTRA TIENDA</p>
+                <h2>Encuentra tu refacción ideal</h2>
+                <p>Consulta nuestro catálogo y encuentra lo que necesitas.</p>
+            </div>
+            <div class="icono-auto" aria-hidden="true">🚘</div>
+        </section>
+
+        <section class="panel panel-completo">
+            <h2>Explora nuestro catálogo</h2>
+
+            <label class="etiqueta-busqueda" for="busquedaProducto">
+                Buscar una refacción
+            </label>
+
+            <input
+                type="search"
+                id="busquedaProducto"
+                placeholder="Ej. llantas, aceite, filtros..."
+                autocomplete="off"
+            >
+
+            <div class="filtros filtros-cliente">
+                <button type="button" onclick="mostrarTodo()">
+                    Todos los productos
+                </button>
+
+                <button type="button" onclick="mostrarPrecioAlto()">
+                    Más de $1,500
+                </button>
+
+                <button type="button" onclick="mostrarPrecioBajo()">
+                    Menos de $1,500
+                </button>
+            </div>
+
+            <p id="mensaje">Cargando catálogo...</p>
+
+            <div class="titulo-carrusel">
+                <h2>Productos disponibles</h2>
+                <span>Desliza para explorar →</span>
+            </div>
+
+            <div
+                id="productos"
+                class="carrusel-productos"
+                aria-label="Catálogo de refacciones"
+            ></div>
+        </section>
+
+        <section class="beneficios-cliente">
+            <article>
+                <span aria-hidden="true">🔧</span>
+                <h3>Variedad</h3>
+                <p>Refacciones para diferentes necesidades.</p>
+            </article>
+
+            <article>
+                <span aria-hidden="true">💲</span>
+                <h3>Precios visibles</h3>
+                <p>Consulta el precio de cada producto.</p>
+            </article>
+
+            <article>
+                <span aria-hidden="true">📦</span>
+                <h3>Existencias</h3>
+                <p>Revisa el stock registrado en el inventario.</p>
+            </article>
+        </section>
+
+        <div class="acciones acciones-cliente">
+            <button type="button" onclick="cerrarSesion()">
+                Cerrar sesión
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="pie">
+        <strong>REFACCIONARIA AGCM</strong>
+        <p>Tu vehículo merece lo mejor.</p>
+    </footer>
+
+    <script src="../js/roles.js"></script>
+    <script src="../js/inventario.js"></script>
+
+</body>
+</html>
